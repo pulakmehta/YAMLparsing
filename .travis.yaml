@@ -2,6 +2,6 @@ language: python
 python:
  - "3.9"
 
-install: pip install yaml
+install: pip install PyYAML
 
 script: python3 sample.py
