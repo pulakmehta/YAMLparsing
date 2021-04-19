@@ -17,9 +17,9 @@
   - scriptYaml.py: This file contains the merging program. Users need to call
   - testing.py: Contains the code used to perform the testing
   - Travis.yaml: This file contains the code to test on YAML
-  - TestCase: # Contains all the test case
-     -  Given: 4 test cases provided in the prompt (int/float/string, lists, nested key-value, sister folder)
-     -  Merge: YAML files for testing the deeper testing of the merging functionality
+  - TestCase: (this folder contains all the test cases) # Contains all the test case
+     -  Given Folder: 4 test cases provided in the prompt (int/float/string, lists, nested key-value, sister folder)
+     -  Merge Folder: YAML files for a deeper testing of the merging functionality
     
   
 # Error codes (key error codes in the code and their meaning)
