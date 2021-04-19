@@ -49,8 +49,8 @@ class Test(unittest.TestCase):
         self.assertEqual(MergingScript(test1).main(), documents)
 
     def test_sister_folder_present(self):
-        test1 = os.path.normpath(os.path.join(dirname,'TestCase/4/test/test','test4.yaml'))
-        test1_ans = os.path.normpath(os.path.join(dirname,'TestCase/expected','4.yaml'))
+        test1 = os.path.normpath(os.path.join(dirname,r'TestCase/4/test/test','test4.yaml'))
+        test1_ans = os.path.normpath(os.path.join(dirname,r'TestCase/expected','4.yaml'))
         with open(test1_ans) as file:
             documents = yaml.load(file, Loader=yaml.FullLoader)
         self.assertEqual(MergingScript(test1).main(), documents)
