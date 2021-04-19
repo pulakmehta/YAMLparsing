@@ -1,4 +1,9 @@
 # YAMLparsing
+- Overview: This code is used to merge YAML files together based on the following conditions:
+  - Int/Float/String of the child overwrites the parent, if common. Else, both get included
+  - List of parent and child get appended
+  - Dictionary gets merged based on the keys. If common, child overwrites the parent. Else, both get included
+  - Everything else gets elimated (like comments)
 - Version: 1.0
 - Author: Pulak Mehta
 - Email: pulak.mehta@nokia.com
