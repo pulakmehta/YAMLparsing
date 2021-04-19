@@ -1,10 +1,10 @@
-name: iPhone
 apiVersion: 3.1
 metadata:
-  name: nginx
   labels:
     app: nginx
     app1: nginx
+  name: nginx
+name: iPhone
 spec:
   containers:
   - image: nginx
@@ -14,10 +14,13 @@ spec:
     volumeMounts:
     - mountPath: /usr/nginx/html
       name: nginx-vol
-  - data: | 
-      log_dest stdout
+  - data: 'log_dest stdout
+
       log_type all
+
       log_timestamp
+
+      '
     image: alt-image
     name: sidecar-container
   - image: nginx
