@@ -56,7 +56,7 @@ class Test(unittest.TestCase):
         self.assertEqual(MergingScript(test1).main(), documents)
 
     def test_complex(self):
-        test1 = os.path.join(dirname,'TestCase/5/test','test5.yaml')
+        test1 = os.path.join(dirname,'TestCase/5/dir1/dir2/dir3/dir4','test5.yaml')
         test1_ans = os.path.join(dirname,'TestCase/expected','5.yaml')
         with open(test1_ans) as file:
             documents = yaml.load(file, Loader=yaml.FullLoader)
