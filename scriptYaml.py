@@ -61,7 +61,7 @@ class MergingScript:
 
 
     def mergingFiles(self,fileList):
-        '''This function loads YAML files one-by-one and joins them starting from the deepest child file to the parent file'''
+        '''This function loads YAML files one-by-one and joins them starting from the most inner file to the parent file'''
         num = len(fileList)
         i = 0
         temp = 0
