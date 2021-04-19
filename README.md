@@ -17,8 +17,7 @@
      -  Merge: YAML files for testing the deeper testing of the merging functionality
     
   
-# Error codes (these are the error codes and their meaning in the code)
-- Error:
+# Error codes (key error codes in the code and their meaning)
  - Error 1: The location of the child YAML file couldn't be found. The user should recheck the directory provided 
  - Error 2: There was an issue in merging the YAML file. Please check the YAML file format
  - Error 99: Unknown error was encountered. Please email support@support.com with you case for further investigation
