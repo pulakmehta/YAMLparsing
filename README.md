@@ -1,13 +1,24 @@
 # YAMLparsing
-1. Author: Pulak Mehta
-2. Email: pulak.mehta@nokia.com
-3. Date: April 8,2021
-4. Objective: This script can merge children and parent YAML files. More details here - 
-5. Coding language used: Python 3.9.1
-6. Operating System: Nokia Win10 PC
-7. Dependencies: 
-7.1 Please ensure that the libraries "PyYAML 
-7.2
-8. Files included:
-8.1. mergeScript.py: This file
-8.2. Error Codes.txt: This file contains various error codes, that will come up
+Version: 1.0
+Author: Pulak Mehta
+Email: pulak.mehta@nokia.com
+Date: April 19,2021
+Objective: This script can merge children and parent YAML files. More details here - 
+Coding language used: Python 3.9.1
+Operating System: Nokia Win10 PC
+Dependencies: 
+  - Please ensure that the PyYAML python library is installed 
+Files included:
+  - scriptYaml.py: This file contains the merging program. Users need to call
+  - testing.py: Contains the code used to perform the testing
+  - Travis.yaml: This file contains the code to test on YAML
+  - TestCase: # Contains all the test case
+     -  Given: 4 test cases provided in the prompt (int/float/string, lists, nested key-value, sister folder)
+     -  Merge: YAML files for testing the deeper testing of the merging functionality
+    
+  
+# Error codes (these are the error codes and their meaning in the code)
+Error:
+ - Error 1: The location of the child YAML file couldn't be found. The user should recheck the directory provided 
+ - Error 2: There was an issue in merging the YAML file. Please check the YAML file format
+ - Error 99: Unknown error was encountered. Please email support@support.com with you case for further investigation
