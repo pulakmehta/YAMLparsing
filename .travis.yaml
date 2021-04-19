@@ -4,4 +4,4 @@ python:
 
 install: pip install PyYAML
 
-script: python3 sample.py
+script: python3 testing.py

@@ -1,0 +1,14 @@
+includes:
+  - 'common.yaml'
+deliverables:
+  - name: 'HTML5'
+    context:
+      idref: 'html'
+    output: '.'
+    publication:
+      transtype: 'html5'
+      params:
+        - name: 'args.copycss'
+          value: 'yes'
+        - name: 'args.css'
+          value: 'dita-ot-doc.css'

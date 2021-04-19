@@ -1,0 +1,29 @@
+name: iPhone
+apiVersion: 3.1
+metadata:
+  name: nginx
+  labels:
+    app: nginx
+    app1: nginx
+spec:
+  containers:
+  - image: nginx
+    name: nginx-container
+    ports:
+    - containerPort: 80
+    volumeMounts:
+    - mountPath: /usr/nginx/html
+      name: nginx-vol
+  - data: | 
+      log_dest stdout
+      log_type all
+      log_timestamp
+    image: alt-image
+    name: sidecar-container
+  - image: nginx
+    name: nginx-container
+    ports:
+    - containerPort: 8080
+    volumeMounts:
+    - mountPath: /usr/nginx
+      name: nginx-volume

@@ -1,0 +1,16 @@
+name: Android
+apiVersion: 3.0
+metadata:
+ name: ngyuen
+ labels:
+  app: ngin
+  app1: nginx 
+spec:
+ containers:
+ - name: nginx-container
+   image: nginx
+   ports:
+   - containerPort: 8080
+   volumeMounts:
+   - name: nginx-volume
+     mountPath: /usr/nginx
