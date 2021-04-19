@@ -42,7 +42,7 @@ class Test(unittest.TestCase):
         self.assertEqual(MergingScript(test1).main(), documents)
 
     def test_given_nested_key_value(self):
-        test1 = os.path.join(dirname,'TestCase/test','test3.yaml')
+        test1 = os.path.join(dirname,'TestCase/3/test','test3.yaml')
         test1_ans = os.path.join(dirname,'TestCase/expected','3.yaml')
         with open(test1_ans) as file:
             documents = yaml.load(file, Loader=yaml.FullLoader)
